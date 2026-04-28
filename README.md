@@ -1,1 +1,1 @@
-# Portfolio Project - Maria Bondarenko
+# Лабораторна робота 1 
