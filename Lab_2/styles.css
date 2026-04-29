@@ -24,7 +24,7 @@ header {
     left: 0;
     width: 100%;
     height: 80px;
-    background-color: #C4FAC1; /* Ваш світло-зелений колір */
+    background-color: #C4FAC1; 
     display: flex;
     justify-content: space-around;
     align-items: center;
