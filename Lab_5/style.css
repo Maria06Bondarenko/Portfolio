@@ -1,0 +1,27 @@
+.container { max-width: 600px; margin: 0 auto; font-family: Arial, sans-serif; }
+.task-item { display: flex; align-items: center; padding: 10px; border-bottom: 1px solid #eee; }
+.task-item.completed .task-title { text-decoration: line-through; color: gray; }
+.task-item:hover { background-color: #f9f9f9; }
+
+.hidden { display: none; }
+.error { color: red; margin: 10px 0; }
+.active { font-weight: bold; background-color: #ddd; }
+
+.task-title { flex-grow: 1; margin: 0 10px; }
+.task-delete { color: white; background: #ff4d4d; border: none; cursor: pointer; padding: 5px 10px; }
+.task-delete:hover { background: #cc0000; }
+
+.filter-btn.active {
+    background-color: #4CAF50; 
+    color: white;
+    border: 1px solid #388E3C;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2); 
+}
+ 
+.filter-btn {
+    cursor: pointer;
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    transition: all 0.2s;
+}

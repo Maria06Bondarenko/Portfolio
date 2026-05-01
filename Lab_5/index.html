@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager - Mariia Bondarenko</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        
+        <div class="controls">
+            <form id="todo-form">
+                <input type="text" id="task-input" placeholder="Що потрібно зробити?" required>
+                <button type="submit" id="add-btn" disabled>Додати</button>
+            </form>
+            <input type="text" class="search-input" placeholder="Пошук завдань...">
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Всі</button>
+            <button class="filter-btn" data-filter="active">Активні</button>
+            <button class="filter-btn" data-filter="completed">Виконані</button>
+            <span id="task-count">Активних: 0</span>
+        </div>
+
+        <div id="loader" class="hidden">Завантаження...</div>
+        <div id="error-message" class="error hidden"></div>
+
+        <ul class="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
